@@ -31,7 +31,7 @@ async def on_message(ctx):
 
     await bot.process_commands(ctx)
 
-@bot.command()
+@bot.slash_command()
 async def linkmc(ctx, minecraft_username):
     whitelist_add = userbase.add_minecraft_user(ctx.author.id, minecraft_username)
 
@@ -44,7 +44,7 @@ async def linkmc(ctx, minecraft_username):
     elif whitelist_add == 405:
         await ctx.reply("Account already linked, use /unlinkmc to link a new account")
 
-@bot.command()
+@bot.slash_command()
 async def unlinkmc(ctx):
     whitelist_remove = userbase.remove_minecraft_user(ctx.author.id)
     if whitelist_remove != None:
