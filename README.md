@@ -5,12 +5,12 @@ A companion Discord bot for a Discord server with an associated Minecraft server
 This is hardly a production application. I am a student so this project is primarily a tool for me to learn thus it is in constant flux and is primarily designed with my own usage in mind.
 
 ## Installation
-cd into prefferred installation directory (script is designed to be run on same host as your Minecraft server)
-clone the repo and cd into
-create a .env file with your DISCORD_TOKEN and RCON_PASS
-create and enter python virtual enviroment
-pip install -r requirements.txt
-run main.py
+1. cd into prefferred installation directory (script is designed to be run on same host as your Minecraft server)
+2. clone the repo and cd into
+3. create a .env file with your DISCORD_TOKEN and RCON_PASS
+4. create and enter python virtual enviroment
+5. pip install -r requirements.txt
+6. run main.py
 
 IF RERUNNNG SCRIPT AFTER INITIAL LAUNCH:
 delete line 7 inside of src/userbase.py
